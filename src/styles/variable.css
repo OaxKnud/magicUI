@@ -1,0 +1,68 @@
+:root {
+  /* 主题配色 */
+  --mg-color-primary: #3069ff;
+  --mg-color-success: #14cd70;
+  --mg-color-warning: #ffa81a;
+  --mg-color-danger: #FF4A5B;
+  --mg-color-info: #909399;
+  --mg-color-white: #ffffff; 
+  --mg-color-black: #000000;
+  /* 布局样式 */
+  --mg-color-layout-header: #c6e2ff;
+  --mg-color-layout-main: #ecf5ff;
+  --mg-color-layout-aside: #d9ecff;
+  /* hover后 */
+  --mg-color-primary-hover: #98b4ff;
+  --mg-color-success-hover: #8AE6B8;
+  --mg-color-warning-hover: #FFD48D;
+  --mg-color-danger-hover: #FFA5AD;
+  --mg-color-info-hover: #c9cdd9;
+  /* 文字配色 */
+  --mg-text-color-primary: #4d5059;
+  --mg-text-color-placeholder: #c9cdd9;
+  --mg-text-color-secondary: #7c808c;
+  --mg-text-color-disabled: #abb1bf; 
+  --mg-border-color: #dcdfe6;
+  --mg-border-color-light: #e4e7ed;
+  --mg-border-color-lighter: #ebeef5;
+  --mg-border-color-extra-light: #f2f6fc;
+  --mg-border-color-dark: #d4d7de;
+  --mg-border-color-darker: #cdd0d6;
+  --mg-fill-color: #f0f2f5;
+  --mg-fill-color-light: #f5f7fa;
+  --mg-fill-color-lighter: #fafafa;
+  --mg-fill-color-extra-light: #fafcff;
+  --mg-fill-color-dark: #ebedf0;
+  --mg-fill-color-darker: #e6e8eb;
+  --mg-fill-color-blank: #ffffff;
+
+  /* border */
+  --mg-border-width: 1px;
+  --mg-border-style: solid;
+  --mg-border-color-hover: var(--mg-text-color-disabled);
+  --mg-border: var(--mg-border-width) var(--mg-border-style) var(--mg-border-color);
+  --mg-border-radius-base: 4px;
+  --mg-border-radius-small: 2px;
+  --mg-border-radius-round: 20px;
+  --mg-border-radius-circle: 100%;
+
+  /*font*/
+  --mg-font-size-extra-large: 20px;
+  --mg-font-size-large: 18px;
+  --mg-font-size-medium: 16px;
+  --mg-font-size-base: 14px;
+  --mg-font-size-small: 13px;
+  --mg-font-size-extra-small: 12px;
+  --mg-font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", Arial, sans-serif;
+  --mg-font-weight-primary: 500;
+
+  /*disabled*/
+  --mg-disabled-bg-color: var(--mg-fill-color-light);
+  --mg-disabled-text-color: var(--mg-text-color-placeholder);
+  --mg-disabled-border-color: var(--mg-border-color-light);
+  
+  /*animation*/
+  --mg-transition-duration: .3s;
+  --mg-transition-duration-fast: .2s;
+
+}
