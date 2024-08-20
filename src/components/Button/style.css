@@ -48,6 +48,7 @@
   background-color: var(--mg-color-primary);
   color: #fff;
 }
+
 /* success */
 .mg-button.mg-button--success {
   background-color: var(--mg-color-success)
@@ -101,6 +102,34 @@
   background-color: var(--mg-color-info);
   color: #fff;
 }
+/* text */
+.mg-button.mg-button--text {
+  background-color: transparent; /* 设置背景颜色为透明 */
+  border: none; /* 移除边框 */
+  color:rgb(64, 158, 255); /* 保持文本颜色不变 */
+}
+
+.mg-button.mg-button--text.is-disabled {
+  background-color: transparent; /* 设置朴素按钮的背景颜色为透明 */
+  border: none; /* 移除边框 */
+  color:rgb(144, 147, 153); /* 保持文本颜色不变 */
+}
+
 /* medium */
+.mg-button--medium {
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
 /* small */
-/* mini */
+.mg-button--small {
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+/* large */
+.mg-button--large {
+  padding: 14px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+}
