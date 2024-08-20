@@ -1,0 +1,106 @@
+/* 按钮基本样式 */
+.mg-button {
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: var(--mg-color-white);
+  text-align: center;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  & + & {
+    margin-left: 12px;
+  }
+  &.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  &.is-round {
+    border-radius: var(--mg-border-radius-round);
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 8px;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}
+  /* primary- */
+.mg-button.mg-button--primary {
+  background-color: var(--mg-color-primary);
+}
+.mg-button.mg-button--primary.is-plain {
+  border: rgb(160, 207, 255);
+  color:  rgb(64, 158, 255);
+  background-color: rgb(236, 245, 255)
+}
+.mg-button.mg-button--primary.is-plain:hover {
+  background-color: var(--mg-color-primary);
+  color: #fff;
+}
+/* success */
+.mg-button.mg-button--success {
+  background-color: var(--mg-color-success)
+}
+.mg-button.mg-button--success.is-plain {
+  background-color:rgb(240, 249, 235);
+  color: rgb(103, 194, 58);
+  border: rgb(179, 225, 157);
+}
+.mg-button.mg-button--success.is-plain:hover{
+  background-color: var(--mg-color-success);
+  color: #fff
+}
+
+/* danger */
+.mg-button.mg-button--danger {
+  background-color: var(--mg-color-danger);
+}
+.mg-button.mg-button--danger.is-plain {
+  border: rgb(250, 182, 182);
+  background-color: rgb(254, 240, 240);
+  color: rgb(245, 108, 108)
+}
+.mg-button.mg-button--danger.is-plain:hover {
+  background-color: var(--mg-color-danger);
+  color: #fff
+}
+/* warning */
+.mg-button.mg-button--warning {
+  background-color: var(--mg-color-warning);
+}
+.mg-button.mg-button--warning.is-plain {
+  color: rgb(230, 162, 60);
+  background-color: rgb(253, 246, 236);
+  border: rgb(243, 209, 158)
+}
+.mg-button.mg-button--warning.is-plain:hover {
+  background-color: var(--mg-color-warning);
+  color: #fff;
+}
+/* info */
+.mg-button.mg-button--info {
+  background-color: var(--mg-color-info);
+}
+.mg-button.mg-button--info.is-plain {
+  background-color: rgb(244, 244, 245);
+  border: rgb(200, 201, 204);
+  color: rgb(144, 147, 153)
+}
+.mg-button.mg-button--info.is-plain:hover {
+  background-color: var(--mg-color-info);
+  color: #fff;
+}
+/* medium */
+/* small */
+/* mini */

@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import MgButton from './components/Button/Button.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+   <MgButton type="success">12312</MgButton>
+   <mg-button >按钮</mg-button>
+    <mg-button type="danger">按钮</mg-button>
+    <mg-button type="info">按钮</mg-button>
+    <mg-button type="warning">按钮</mg-button>
+    <mg-button type="success">按钮</mg-button>
+    <mg-button loading>按钮1</mg-button>
+    <mg-button icon="arrow-right">按钮1</mg-button> 
+    <mg-button >按钮</mg-button>
 </template>
 
 <style scoped>
