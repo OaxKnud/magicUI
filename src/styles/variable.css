@@ -9,8 +9,9 @@
   --mg-color-black: #000000;
   /* 布局样式 */
   --mg-color-layout-header: #c6e2ff;
-  --mg-color-layout-main: #ecf5ff;
-  --mg-color-layout-aside: #d9ecff;
+  --mg-color-layout-main: #90bdf1;
+  --mg-color-layout-aside: #3d7fc1;
+  --mg-color-layout-footer: #67a3df;
   /* hover后 */
   --mg-color-primary-hover: #98b4ff;
   --mg-color-success-hover: #8AE6B8;

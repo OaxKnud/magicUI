@@ -1,10 +1,14 @@
 <script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
 import MgButton from './components/Button/Button.vue'
+import MgContainer from './components/Container/Container.vue'
+import MgHeader from './components/Container/Header.vue'
+import MgFooter from './components/Container/Footer.vue'
+import MgMain from './components/Container/Main.vue'
+import MgAside from './components/Container/Aside.vue'
 </script>
 
 <template>
-   <MgButton type="success">12312</MgButton>
+   <!-- <MgButton type="success">12312</MgButton>
    <mg-button >按钮</mg-button>
     <mg-button type="danger">按钮</mg-button>
     <mg-button type="info">按钮</mg-button>
@@ -12,7 +16,14 @@ import MgButton from './components/Button/Button.vue'
     <mg-button type="success">按钮</mg-button>
     <mg-button loading>按钮1</mg-button>
     <mg-button icon="arrow-right">按钮1</mg-button> 
-    <mg-button >按钮</mg-button>
+    <mg-button >按钮</mg-button> -->
+    
+    <!-- <MgContainer >
+      <MgHeader height=120>header1</MgHeader>
+      <MgAside width=200>Aside</MgAside>
+      <MgMain>main</MgMain>
+      <MgFooter height=240>footer</MgFooter>
+    </MgContainer> -->
 </template>
 
 <style scoped>
