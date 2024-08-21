@@ -1,6 +1,6 @@
 <template>
     <main class="mg-main">
-        <slot></slot>
+        <slot>Main</slot>
     </main>
 </template>
 

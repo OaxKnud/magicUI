@@ -26,7 +26,7 @@ export default defineConfig({
         items: [
           { text: 'Button 按钮', link: '/components/button' },
           { text: 'Container 布局容器', link: '/components/container' },
-          { text: 'Icon 图标', link: '/components/button' },
+          { text: 'Icon 图标', link: '/components/icon' },
           { text: 'Link 链接', link: '/components/button' },
           { text: 'Collapse 折叠面板', link: '/components/button' },
         ]
@@ -55,7 +55,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/OaxKnud/magicUI' }
     ]
   },
   markdown: {

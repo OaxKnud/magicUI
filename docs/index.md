@@ -12,7 +12,7 @@ hero:
       link: /components/button
     - theme: alt
       text: github仓库
-      link: /api-examples
+      link: https://github.com/OaxKnud/magicUI
 
 features:
   - title: 技术栈
