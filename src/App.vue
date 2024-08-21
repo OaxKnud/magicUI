@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import MgButton from './components/Button/Button.vue'
-import MgContainer from './components/Container/Container.vue'
-import MgHeader from './components/Container/Header.vue'
-import MgFooter from './components/Container/Footer.vue'
-import MgMain from './components/Container/Main.vue'
-import MgAside from './components/Container/Aside.vue'
+// import MgButton from './components/Button/Button.vue'
+// import MgContainer from './components/Container/Container.vue'
+// import MgHeader from './components/Container/Header.vue'
+// import MgFooter from './components/Container/Footer.vue'
+// import MgMain from './components/Container/Main.vue'
+// import MgAside from './components/Container/Aside.vue'
+import MgLink from './components/Link/Link.vue'
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import MgAside from './components/Container/Aside.vue'
       <MgMain>main</MgMain>
       <MgFooter height=240>footer</MgFooter>
     </MgContainer> -->
+    <mg-link type="primary" :underline="false">link111</mg-link>
 </template>
 
 <style scoped>

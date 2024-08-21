@@ -1,0 +1,100 @@
+.mg-link {
+  margin-right: 8px;
+  /* display: inline-flex; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mg-text-color-primary);  
+}
+.mg-link.is-disabled {
+  cursor: not-allowed;
+}
+/* default */
+.mg-link.mg-link--default {
+  color: var(--mg-text-color-primary);
+}
+.mg-link.mg-link--default.is-underline:hover {
+  border-bottom: 1px solid var(--mg-text-color-primary);
+}
+.mg-link.mg-link--default:hover,
+.mg-link.mg-link--default.is-disabled
+{
+  color: var(--mg-text-color-placeholder);
+}
+/* primary */
+.mg-link.mg-link--primary {
+  color: var(--mg-color-primary)
+}
+.mg-link.mg-link--primary:hover,
+.mg-link.mg-link--primary.is-diabled 
+{
+  color: var(--mg-color-primary-hover)
+}
+.mg-link.mg-link--primary.is-underline:hover {
+  border-bottom: 1px solid var(--mg-color-primary);
+}
+
+/* success */
+.mg-link.mg-link--success {
+  color: var(--mg-color-success)
+}
+.mg-link.mg-link--success:hover,
+.mg-link.mg-link--success.is-disabled
+{
+  color: var(--mg-color-success-hover)
+}
+.mg-link.mg-link--success.is-underline:hover {
+  border-bottom: 1px solid var(--mg-color-success);
+}
+/* warning */
+.mg-link.mg-link--warning {
+  color: var(--mg-color-warning)
+}
+.mg-link.mg-link--warning:hover,
+.mg-link.mg-link--warnig.is-disabled
+{
+  color: var(--mg-color-warning-hover)
+}
+.mg-link.mg-link--warning.is-underline:hover {
+  border-bottom: 1px solid var(--mg-color-warning);
+}
+/* info */
+.mg-link.mg-link--info {
+  color: var(--mg-color-info)
+}
+.mg-link.mg-link--info:hover,
+.mg-link.mg-link--info.is-disabled
+{
+  color: var(--mg-color-info-hover)
+}
+.mg-link.mg-link--info.is-underline:hover {
+  border-bottom: 1px solid var(--mg-color-info);
+}
+
+/* danger */
+.mg-link.mg-link--danger {
+  color: var(--mg-color-danger)
+}
+.mg-link.mg-link--danger:hover,
+.mg-link.mg-link--danger.is-disabled
+{
+  color: var(--mg-color-danger-hover)
+}
+.mg-link.mg-link--danger.is-underline:hover {
+  border-bottom: 1px solid var(--mg-color-danger);
+}
+/* a标签中的内容 */
+.mg-link .mg-link__inner {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+

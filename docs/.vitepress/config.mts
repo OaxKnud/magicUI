@@ -27,7 +27,7 @@ export default defineConfig({
           { text: 'Button 按钮', link: '/components/button' },
           { text: 'Container 布局容器', link: '/components/container' },
           { text: 'Icon 图标', link: '/components/icon' },
-          { text: 'Link 链接', link: '/components/button' },
+          { text: 'Link 链接', link: '/components/link' },
           { text: 'Collapse 折叠面板', link: '/components/button' },
         ]
       },
