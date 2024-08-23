@@ -1,4 +1,3 @@
-import useZIndex from "../../hooks/useZIndex";
 import { render, h, shallowReactive } from 'vue'
 import { MessageContext,CreateMessageProps } from "./types";
 import MessageConstructor from './Message.vue'
@@ -12,36 +11,14 @@ export const instances: MessageContext[] = shallowReactive([])
 
 // 创建消息函数
 export const createMessage = (props: CreateMessageProps) => {
-    // 获取下一个可用的 z-index
-    const { nextZIndex } = useZIndex()
     // 生成消息 id
     const id = `message_${seed++}`
     // 创建消息容器
     const container = document.createElement('div')
-    // // 销毁消息函数
-    // const destory = () => {
-    //   // 从实例数组中找到并删除当前消息实例
-    //   const idx = instances.findIndex(instance => instance.id === id)
-    //   if (idx === -1) return
-    //   //删除实例
-    //   instances.splice(idx, 1)
-    //   // 渲染 null 来清空消息容器
-    //   render(null, container)
-    //   console.log("destory container:",container)
-    // }
-    // // 手动销毁消息函数
-    // const manualDestroy = () => {
-    //   const instance = instances.find(instance => instance.id === id)
-    //   if (instance) {
-    //     instance.vm.exposed!.visible.value = false
-    //   }
-    // }
     // 合并新的 props
     const newProps = {
       ...props,
       id,
-      zIndex: nextZIndex(), // 设置 z-index
-    //   onDestory: destory // 设置销毁函数
     }
     // 通过 h 函数 创建消息vNode
     const vnode = h(MessageConstructor, newProps)
@@ -57,17 +34,10 @@ export const createMessage = (props: CreateMessageProps) => {
       vnode,
       vm,
       props: newProps,
-    //   destory: manualDestroy // 手动销毁函数
     }
     // 将消息实例对象添加到实例数组中
     instances.push(instance)
-    // console.log("instances:",instances)
     return instance
-}
-
-// 获取最后一个消息实例
-export const getLastInstance = () => {
-    return instances.at(-1)
 }
 
 // 获取上一个实例的底部偏移量
@@ -80,10 +50,3 @@ export const getLastBottomOffset = (id: string) => {
         return prev.vm.exposed!.bottomOffset.value
     }
 }
-
-// 关闭所有消息
-// export const closeAll = () => {
-//     instances.forEach(instance => {
-//         instance.destory()
-//     })
-// }

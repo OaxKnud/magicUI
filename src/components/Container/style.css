@@ -21,6 +21,7 @@
     box-sizing: border-box;
     line-height: 60px;
     text-align: center;
+    width:100%;
 }
 
 .mg-footer {
@@ -29,6 +30,7 @@
     box-sizing: border-box;
     line-height: 60px;
     text-align: center;
+    width:100%;
 }
 
 .mg-main {
@@ -41,6 +43,7 @@
     overflow: auto;
     line-height: 60px;
     text-align: center;
+    width:100%;
 }
 
 .mg-aside {

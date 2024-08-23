@@ -6,7 +6,7 @@ export interface MessageProps {
   duration?: number;               // 持续时间
   showClose?: boolean;             // 是否显示关闭按钮
   type?: 'success' | 'info' | 'warning' | 'error';  // 消息类型
-  zIndex: number;                   // 消息的层级
+  // zIndex: number;                   // 消息的层级
   offset?: number;                  // 偏移量
   iconClass?: string; //自定义图标
   center?: boolean; //文字居中
