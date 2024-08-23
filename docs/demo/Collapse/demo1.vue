@@ -1,5 +1,5 @@
 <template>
-<mg-collapse :modelValue="[]" >
+<mg-collapse v-model="openedValue" @change="handleChange">
   <mg-collapse-item title="一致性 Consistency" name="1">
     <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
     <div>在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</div>
@@ -23,8 +23,9 @@
 <script setup>
 import MgCollapseItem from '@/components/Collapse/CollapseItem.vue'
 import MgCollapse from '@/components/Collapse/Collapse.vue'
-
+import {ref} from 'vue'
+const openedValue = ref([])
 const handleChange=(val)=> {
-    console.log(val);
+    console.log("change:",val);
 }
 </script>

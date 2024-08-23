@@ -20,7 +20,7 @@ export interface CollapseEmits {
     // 更新了绑定值时，会自动触发
     (e: 'update:modelValue', value: CollapseActiveName[]): void,
     // 用户展开或折叠某个面板时触发change事件
-    (e: 'change', values: CollapseActiveName[]): void
+    (e: 'change', value: CollapseActiveName[]): void
 }
 
 // 接收Inject数据类型

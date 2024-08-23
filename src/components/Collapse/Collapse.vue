@@ -2,7 +2,6 @@
 <div class="mg-collapse">
     <slot></slot>
 </div>
-
 </template>
 
 <script setup lang="ts">
@@ -23,7 +22,7 @@ const activeNames=ref<CollapseActiveName[]>([])
 
 //编写监听watch,监听props是否发生变化
 watch(()=>props.modelValue,()=>{
-    // console.log("watch:",props.modelValue)
+    // console.log("watch-props-modelValue:",props.modelValue)
     activeNames.value=props.modelValue
 },{immediate:true})
 
@@ -33,6 +32,7 @@ const setActiveNames=(_activeNames:CollapseActiveName[])=>{
      // 根据是否启用手风琴模式，触发对应的事件
     // 如果启用了手风琴模式，只触发 update:modelValue 事件，并将数组的第一个值作为参数
     // 如果未启用手风琴模式，同时触发 update:modelValue 和 change 事件，将活动折叠项数组作为参数
+    // console.log("watch-props-modelValue:",props.modelValue)
     emits('change',activeNames.value)
     emits('update:modelValue',activeNames.value)
 }

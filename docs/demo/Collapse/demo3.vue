@@ -1,5 +1,5 @@
 <template>
-    <mg-collapse :modelValue="[]" accordion>
+    <mg-collapse v-model="openedValue" accordion>
         <mg-collapse-item name="1">
             <template v-slot:title>
                 <div>一致性 Consistency<mg-icon icon="search"></mg-icon></div>
@@ -27,5 +27,8 @@
 import MgCollapseItem from '@/components/Collapse/CollapseItem.vue'
 import MgCollapse from '@/components/Collapse/Collapse.vue'
 import MgIcon from '@/components/Icon/Icon.vue'
+import {ref} from 'vue'
+
+const openedValue=ref([])
 
 </script>
