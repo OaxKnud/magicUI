@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import { MessageProps } from "./types";
-import { computed, ref } from "vue";
+import { computed, ref,h } from "vue";
 import MgIcon from "../Icon/Icon.vue";
 import RenderVnode from "../Common/RenderVNode";
 import { onMounted } from "vue";

@@ -1,0 +1,95 @@
+.messagebox-fade-enter-from,
+.messagebox-fade-leave-to {
+  opacity: 0;
+}
+
+.messagebox-fade-enter-active {
+  transition: opacity 0.6s ease-in;
+}
+
+.messagebox-fade-leave-active {
+  transition: opacity 0.6s ease-out;
+}
+
+.mg-message-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+
+  .mg-message-box-wrapper {
+    position: absolute;
+    width: 420px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -210px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    .mg-message-box-title {
+      padding: 15px 15px 10px;
+
+      h1 {
+        font-size: 18px;
+        display: inline-block;
+      }
+
+      .mg-message-box-close {
+        float: right;
+        font-size: 12px;
+        color: #999;
+      }
+
+      /* 添加鼠标悬停效果 */
+      .mg-message-box-close:hover {
+        color: #555;
+        /* 悬停时改变颜色，可以根据需要调整 */
+        cursor: pointer;
+        /* 确保悬停时也是手形图标 */
+      }
+    }
+
+    .mg-message-box-content {
+      padding: 10px 15px;
+
+      p {
+        font-size: 14px;
+      }
+      
+    }
+
+    .mg-message-box-btns {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 5px 15px 15px;
+
+      .mg-button {
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+
+    .message-input {
+      margin-top: 10px;
+      border: none;
+      outline: none;
+      width: 100%;
+      border: 1px solid #ddd;
+      height: 32px;
+      box-sizing: border-box;
+      .error-message {
+        padding-top: 5px;
+        color:#DC2708;
+        font-size: 12px;
+      }
+    }
+  }
+}

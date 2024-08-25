@@ -22,6 +22,7 @@ export const createMessage = (props: CreateMessageProps) => {
     }
     // 通过 h 函数 创建消息vNode
     const vnode = h(MessageConstructor, newProps)
+    // console.log('vnode:',vnode)
     // 渲染消息 vnode 到容器中
     render(vnode, container)
     // 将容器中的第一个元素添加到 body 中
