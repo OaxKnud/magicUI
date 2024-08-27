@@ -4,7 +4,7 @@
       <div class="mg-message-box-wrapper">
         <div class="mg-message-box-title">
           <h1>{{ props.title }}</h1>
-          <span class="mg-message-box-close">
+          <span class="mg-message-box-close" v-if="props.showClose">
             <mg-icon icon="xmark" @click="handleAction('cancel')"></mg-icon>
           </span>
         </div>
