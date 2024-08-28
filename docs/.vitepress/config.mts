@@ -37,9 +37,9 @@ export default defineConfig({
           { text: 'Message 消息提示', link: '/components/message' },
           { text: 'MessageBox 弹窗', link: '/components/MessageBox' },
           { text: 'Tooltip 文字提示', link: '/components/Tooltip' },
-          { text: 'Alert 反馈', link: '/components/button' },
+          { text: 'Dropdown 下拉菜单', link: '/components/dropdown' },
+          { text: 'Rate 评分', link: '/components/rate' },
           { text: 'Message 消息弹出框', link: '/components/button' },
-          { text: 'Dropdown 下拉菜单', link: '/components/button' },
         ]
       },
       {

@@ -20,7 +20,7 @@
       box-shadow: var(--mg-box-shadow-light);
       word-break: break-all;
       box-sizing: border-box;
-      z-index: 1000;
+      z-index: 10000;
       #arrow,
       #arrow::before {
         position: absolute;
