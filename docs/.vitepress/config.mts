@@ -39,7 +39,7 @@ export default defineConfig({
           { text: 'Tooltip 文字提示', link: '/components/Tooltip' },
           { text: 'Dropdown 下拉菜单', link: '/components/dropdown' },
           { text: 'Rate 评分', link: '/components/rate' },
-          { text: 'Message 消息弹出框', link: '/components/button' },
+          { text: 'Switch 开关', link: '/components/switch' },
         ]
       },
       {
