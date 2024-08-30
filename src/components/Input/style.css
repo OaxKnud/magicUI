@@ -1,0 +1,85 @@
+.mg-input {
+  margin-bottom: 10px;
+  display: flex;
+}
+.mg-input-label {
+  margin-right: 8px;
+  font-weight: bold;
+  color: #333;
+}
+.mg-input-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* width: 220px; */
+}
+.mg-input-prepend,
+.mg-input-append {
+  background-color: #f5f7fa;
+  color: #909399;
+  padding: 0 20px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  height: 34px;
+  margin-top: 4px;
+}
+.mg-input-prepend {
+  border: 1px solid var(--mg-border-color);
+  margin-right: -3px;
+}
+.mg-input-append {
+  border: 1px solid var(--mg-border-color);
+  margin-left: -3px;
+}
+.mg-input-content {
+  margin: 4px 2px;
+  flex: 1;
+  box-sizing: border-box;
+  border: 1px solid var(--mg-border-color);
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+  color: #606266;
+}
+.mg-input--default .mg-input-content  {
+  height: 34px;
+  padding: 12px;
+  padding-left: 18px;
+}
+.mg-input--large .mg-input-content  {
+  height: 44px;
+  padding: 20px;
+}
+.mg-input--small .mg-input-content  {
+  height: 28px;
+  padding: 12px;
+}
+.mg-input-content:disabled{
+  background-color: #f0f0f0;
+  opacity: .7;
+  cursor: not-allowed;
+}
+.mg-input-content:focus {
+  border-color: #007bff;
+}
+.mg-input-clear,
+.mg-input-eye,
+.mg-input-suffix,
+.mg-input-prefix
+{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+  font-size: 14px;
+}
+.mg-input-prefix {
+  left: 6px;
+}

@@ -40,6 +40,7 @@ export default defineConfig({
           { text: 'Dropdown 下拉菜单', link: '/components/dropdown' },
           { text: 'Rate 评分', link: '/components/rate' },
           { text: 'Switch 开关', link: '/components/switch' },
+          { text: 'Form表单', link: '/components/form' },
         ]
       },
       {

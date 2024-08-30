@@ -1,0 +1,55 @@
+.mg-form {
+    --mg-form-label-font-size: var(--mg-font-size-base);
+}
+
+.mg-form-item {
+    display: flex;
+    --font-size: 14px;
+    margin-bottom: 18px;
+
+    .mg-form-item__label {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex: 0 0 auto;
+        font-size: var(--mg-form-label-font-size);
+        color: var(--mg-text-color-regular);
+        height: 32px;
+        line-height: 32px;
+        padding: 0 12px 0 0;
+        box-sizing: border-box;
+        width: 150px;
+    }
+
+    .mg-form-item__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 1;
+        line-height: 32px;
+        position: relative;
+        font-size: var(--font-size);
+        min-width: 0;
+    }
+
+    .mg-form-item__error-msg {
+        padding-top: 2px;
+        color: var(--mg-color-danger);
+        font-size: 12px;
+        line-height: 1;
+        padding-top: 2px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}
+
+.mg-form-item.is-error .mg-input__wrapper {
+    box-shadow: 0 0 0 1px var(--mg-color-danger) inset;
+}
+
+.mg-form-item.is-required>.mg-form-item__label:before {
+    content: "*";
+    color: var(--mg-color-danger);
+    margin-right: 4px;
+}
